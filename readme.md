@@ -25,7 +25,7 @@ Al arrancar la página: ¡Vamos a Jugar!.
 - [x] Comparar el movimiento que la jugadora ha seleccionado con el movimiento que ha generado la computadora y pintar las pistas correspondientes en la pantalla.
 
 ## Bonus
-- [ ] Saca tu lado creativo y maqueta y decora tu página con estilo.
+- [x] Saca tu lado creativo y maqueta y decora tu página con estilo.
 - [ ] En la parte inferior debe aparecer los puntos de cada jugadora. Agrega el código necesario para contar los puntos del jugador y del ordenador.
 - [ ] El juego finaliza cuando llega a 10 movimientos, agrega el código necesario para que se muestre un botón Reiniciar Juego que vuelva a iniciar el juego cuando se cumpla esta condición y desaparezca el botón de Jugar.
 - [ ] Cuando le demos click a al botón Reiniciar Juego desaparece este botón, poner todos los contadores a cero y vuelve a aparecer el botón Jugar.
