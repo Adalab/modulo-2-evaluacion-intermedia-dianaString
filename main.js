@@ -12,8 +12,9 @@
 const select = document.querySelector('.js-select');
 const btnSelect = document.querySelector('.js-btn-select');
 const btnPlay = document.querySelector('.js-btn-play');
-const textPlayer = document.querySelector('.js-textPlayer');
-const textComputer = document.querySelector('.js-textComputer');
+const textResult = document.querySelector('.js-text-result');
+const textPlayer = document.querySelector('.js-text-player');
+const textComputer = document.querySelector('.js-text-computer');
 
 // OBJETOS
 const opciones = {
@@ -43,7 +44,7 @@ function cpu(){
         return opciones.Papel;
     }
     else { // (select.value === "Tijera" ) 
-        console.log(`CPU: ${'Papel'}`);
+        console.log(`CPU: ${'Tijera'}`);
         return opciones.Tijera;
     }
 }
@@ -72,12 +73,12 @@ const juego = function(player, cpu){
         return "Empate";
     } 
     else if (opciones[player] === cpu) {
-        console.log("Ganas!");
-        return "Ganas!";
+        console.log("Has Ganado");
+        return "Ganas";
     }
     else {
         console.log("Pierdes");
-        return "Pierdes";
+        return "Has perdido";
     }
     /* opciones[player] devuelve un valor según una clave,
         por lo que si el user escribió Piedra, opciones[player] 
@@ -100,8 +101,19 @@ function handleClickBtnPlay(event) {
     const playerOption = player(); // Lo mismo con la del jugador
     const result = juego(playerOption, computerOption); // Se comparan ambas variables
     console.log(`Resultado: ${result}`);
+
+    textResult.innerHTML = `¡${result}!`;
+
+}
+// Puntos que lleva la jugadora
+function handleClickTxtResult(event) {
+    /* event.preventDefault(); */
+    if (result === Ganas) {
+        textPlayer.innerHTML = `Jugador: playerWonGames[i]`;
+    } 
 }
 
 // Event/Listeners
 btnSelect.addEventListener('click', handleClickBtnSelect);
 btnPlay.addEventListener('click', handleClickBtnPlay);
+textPlayer.addEventListener('click', handleClickTxtResult);

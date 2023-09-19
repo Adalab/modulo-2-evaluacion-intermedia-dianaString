@@ -9,22 +9,20 @@ A su vez, se va contabilizando el **número de puntos del jugador y del ordenado
 El juego se acaba cuando se realicen **10 movimientos**.
 
 ## Indicaciones
-- [ ] En la parte superior, la jugadora selecciona la jugada del desplegable. Las opciones son Piedra, Papel y Tijera y le da clic en el botón Jugar.  
-- [ ] Debajo, en el próximo apartado aparecen los siguientes textos:
+- [x] En la parte superior, la jugadora selecciona la jugada del desplegable. Las opciones son Piedra, Papel y Tijera y le da clic en el botón Jugar.  
+- [x] Debajo, en el próximo apartado aparecen los siguientes textos:
 Al arrancar la página: ¡Vamos a Jugar!.
-   - [ ] Cuando la jugadora introduzca un movimiento que coincida con al movimiento aleatorio se
-muestra el mensaje: Empate.
-   - [ ] Cuando la jugadora introduzca un movimiento que gane al movimiento aleatorio se muestra el mensaje: ¡Has Ganado!.
-   - [ ] Cuando la jugadora introduzca un movimiento que falle al movimiento aleatorio se muestra el mensaje: ¡Has perdido!
+   - [x] Cuando la jugadora introduzca un movimiento que coincida con al movimiento aleatorio se muestra el mensaje: Empate.
+   - [x] Cuando la jugadora introduzca un movimiento que gane al movimiento aleatorio se muestra el mensaje: ¡Has Ganado!.
+   - [x] Cuando la jugadora introduzca un movimiento que falle al movimiento aleatorio se muestra el mensaje: ¡Has perdido!
 
 ## Pasos 
 - [x] Crear una maquetación mínima con el select, el botón y el espacio para el resultado.
-- [ ] Generar un número aleatorio entre 1 y 9 con la ayuda de Math.random y Math.ceil.
-- [ ] Generar un movimiento aleatorio y para eso puedes seguir las siguientes indicaciones:
-   - [ ] Si el número aleatorio generado en el paso anterior es menor o igual que 3 el movimiento es piedra
-   - [ ] Si el número aleatorio generado es mayor o igual que 7 el movimiento es papel y sino, el movimiento generado es tijera
-- [ ] Comparar el movimiento que la jugadora ha seleccionado con el movimiento que ha generado la
-computadora y pintar las pistas correspondientes en la pantalla.
+- [x] Generar un número aleatorio entre 1 y 9 con la ayuda de Math.random y Math.ceil.
+- [x] Generar un movimiento aleatorio y para eso puedes seguir las siguientes indicaciones:
+   - [x] Si el número aleatorio generado en el paso anterior es menor o igual que 3 el movimiento es piedra
+   - [x] Si el número aleatorio generado es mayor o igual que 7 el movimiento es papel y sino, el movimiento generado es tijera
+- [x] Comparar el movimiento que la jugadora ha seleccionado con el movimiento que ha generado la computadora y pintar las pistas correspondientes en la pantalla.
 
 ## Bonus
 - [ ] Saca tu lado creativo y maqueta y decora tu página con estilo.
