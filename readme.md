@@ -18,7 +18,7 @@ muestra el mensaje: Empate.
    - [ ] Cuando la jugadora introduzca un movimiento que falle al movimiento aleatorio se muestra el mensaje: ¡Has perdido!
 
 ## Pasos 
-- [ ] Crear una maquetación mínima con el select, el botón y el espacio para el resultado.
+- [x] Crear una maquetación mínima con el select, el botón y el espacio para el resultado.
 - [ ] Generar un número aleatorio entre 1 y 9 con la ayuda de Math.random y Math.ceil.
 - [ ] Generar un movimiento aleatorio y para eso puedes seguir las siguientes indicaciones:
    - [ ] Si el número aleatorio generado en el paso anterior es menor o igual que 3 el movimiento es piedra
