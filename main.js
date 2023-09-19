@@ -15,14 +15,15 @@ const btnPlay = document.querySelector('.js-btn-play');
 const textPlayer = document.querySelector('.js-textPlayer');
 const textComputer = document.querySelector('.js-textComputer');
 
-// FUNCIONES
-
+// OBJETOS
 const opciones = {
     Piedra: "Tijera",
     Papel: "Piedra",
     Tijera: "Papel",
  /* (clave): "(valor)" */
 };
+
+// FUNCIONES
 
 // CPU (Computadora)
 function getRandomNumber(max) { 
@@ -47,6 +48,7 @@ function cpu(){
     }
 }
 
+// La jugadora
 function player() {
     if (select.value === "Piedra" ) {
         console.log(`Player: ${'Piedra'}`);
@@ -65,45 +67,41 @@ function player() {
 // El juego
 const juego = function(player, cpu){
     
-        /* opciones(); */
-        if (player === cpu) {
-            console.log("Empate");
-            return "Empate";
-        } 
-        else if (cpu === opciones[player]) {
-            console.log("Ganas!");
-            return "Ganas!";
-        }
-        else {
-            console.log("Pierdes");
-            return "Pierdes";
-        }
+    if (player === cpu) {
+        console.log("Empate");
+        return "Empate";
+    } 
+    else if (opciones[player] === cpu) {
+        console.log("Ganas!");
+        return "Ganas!";
     }
-
-// Funciones
-/* function handleClickSelect(event) {
-    event.preventDefault();
-    console.log('hola');
-    if (select.value == "Tijera" && btnSelect.onclick) {
-        console.log('tijera');
+    else {
+        console.log("Pierdes");
+        return "Pierdes";
     }
-} */
+    /* opciones[player] devuelve un valor según una clave,
+        por lo que si el user escribió Piedra, opciones[player] 
+        devolverá el valor "Tijeras". Si es el mismo valor que
+        el de la cpu, gana! */
+}
 
-// Handle (Selección jugadora/player)
+// HANDLES
+
+// Selección jugadora/player
 function handleClickBtnSelect(event) {
     event.preventDefault();
     player();
 }
 
+// Botón "¡Vamos a jugar!"
 function handleClickBtnPlay(event) {
     event.preventDefault();
-    cpu();
-    player();
-    juego(player,cpu);
-    console.log(`Así ha quedado ${juego()}`);
+    const computerOption = cpu(); // Se almacena la jugada de la CPU en una variable
+    const playerOption = player(); // Lo mismo con la del jugador
+    const result = juego(playerOption, computerOption); // Se comparan ambas variables
+    console.log(`Resultado: ${result}`);
 }
 
 // Event/Listeners
-/* selectListener.addEventListener('click', handleClickSelect); */
 btnSelect.addEventListener('click', handleClickBtnSelect);
 btnPlay.addEventListener('click', handleClickBtnPlay);
