@@ -1,0 +1,11 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:first baseline;
+  align-items: center;
+  margin-top: 6rem;
+  gap: 2rem;
+}
