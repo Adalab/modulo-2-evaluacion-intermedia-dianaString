@@ -25,14 +25,14 @@ form {
   gap: 2rem;
 }
 
-select, button {
+select, input, button {
   padding: 10px;
   font-size: 1.2rem;
   cursor: pointer;
 }
 
-.js-btn-play, .js-btn-select {
-  color: aliceblue;
+.js-btn-play, .js-button-reset {
+  color: white;
   font-weight: 600;
   background-color: #6bd6c4;
   border: none;
@@ -40,12 +40,12 @@ select, button {
   border-radius: 0.4rem;
 }
 
-.js-btn-select {
+.js-button-reset {
   border-radius: 0.2rem;
-  font-weight: 300;
+  font-weight: 600;
 }
 
-.js-btn-play:hover, .js-btn-select:hover {
+.js-btn-play:hover, .js-button-reset:hover {
   background-color: #49dddb;
   outline: 2px solid #49dddb;
 }
@@ -53,4 +53,15 @@ select, button {
 .js-text-result {
   font-weight: 800;
   font-style: italic;
+}
+
+.hidden {
+  display: none;
+}
+
+.blocked, .blocked:hover {
+  color:#b4b4b4;
+  background-color: #d8d8d8;
+  cursor: default;
+  outline: 2px solid #d8d8d8;
 }

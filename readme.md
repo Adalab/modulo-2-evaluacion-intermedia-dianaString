@@ -26,14 +26,14 @@ Al arrancar la página: ¡Vamos a Jugar!.
 
 ## Bonus
 - [x] Saca tu lado creativo y maqueta y decora tu página con estilo.
-- [ ] En la parte inferior debe aparecer los puntos de cada jugadora. Agrega el código necesario para contar los puntos del jugador y del ordenador.
-- [ ] El juego finaliza cuando llega a 10 movimientos, agrega el código necesario para que se muestre un botón Reiniciar Juego que vuelva a iniciar el juego cuando se cumpla esta condición y desaparezca el botón de Jugar.
-- [ ] Cuando le demos click a al botón Reiniciar Juego desaparece este botón, poner todos los contadores a cero y vuelve a aparecer el botón Jugar.
-- [ ] Cuando finalice el juego, muestra quién ha ganado la partida: la computadora o la usuaria.
+- [x] En la parte inferior debe aparecer los puntos de cada jugadora. Agrega el código necesario para contar los puntos del jugador y del ordenador.
+- [x] El juego finaliza cuando llega a 10 movimientos, agrega el código necesario para que se muestre un botón Reiniciar Juego que vuelva a iniciar el juego cuando se cumpla esta condición y desaparezca el botón de Jugar.
+- [x] Cuando le demos click a al botón Reiniciar Juego desaparece este botón, poner todos los contadores a cero y vuelve a aparecer el botón Jugar.
+- [x] Cuando finalice el juego, muestra quién ha ganado la partida: la computadora o la usuaria.
 
 ## Entrega
 La evaluación solo se considerará terminada cuando:
-- [ ] Esté publicada en GitHub Pages (apuntando a la rama main/master) y esté funcionando.
-- [ ] El enlace a GitHub Pages esté en la página página principal del repositorio, en la parte superior, al lado de la descripción.
+- [x] Esté publicada en GitHub Pages (apuntando a la rama main/master) y esté funcionando.
+- [x] El enlace a GitHub Pages esté en la página página principal del repositorio, en la parte superior, al lado de la descripción.
 
 ### *¡A jugar!*
